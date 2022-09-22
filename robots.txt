@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://masp.github.io/sitemap.xml
