@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Mark's Blog
+</h1>
+
+<ul class="homepage-list">
+    <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
+    {% for page in section.pages %}
+    <li>
+        <a class="li-title" href="{{ page.permalink | safe }}">{{ page.title }}</a>
+        <span class="li-title li-date">{{page.date}}</span>
+        <span class="li-desc">{{page.description}}</span>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}
